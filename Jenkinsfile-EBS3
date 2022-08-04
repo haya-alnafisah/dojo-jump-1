@@ -4,12 +4,12 @@ pipeline {
 
 	environment {
 		DOCKERHUB_CREDENTIALS=credentials('haya-docker-js')
-		AWS_ACCESS_KEY_ID     = credentials('class-jenkins-aws-secret-access-key')
-   AWS_SECRET_ACCESS_KEY = credentials('class-jenkins-aws-secret-key-id')
-	ARTIFACT_NAME = 'Dockerrun.aws.json'
-AWS_S3_BUCKET = 'dojotest-eb-docker2'
-AWS_EB_APP_NAME = 'dojotest-dojojump'
-        AWS_EB_ENVIRONMENT_NAME = 'Dojotestdojojump-env'
+		AWS_ACCESS_KEY_ID = credentials('class-jenkins-aws-secret-access-key')
+        AWS_SECRET_ACCESS_KEY = credentials('class-jenkins-aws-secret-key-id')
+	    ARTIFACT_NAME = 'Dockerrun.aws.json'
+        AWS_S3_BUCKET = 'dojotest-eb-docker2'
+        AWS_EB_APP_NAME = 'dojotest-dojojump'
+        AWS_EB_ENVIRONMENT_NAME = 'Dojotestdojojump-env-3'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
 	}
 
